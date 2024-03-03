@@ -31,17 +31,19 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Cost control'),
       ),
-      body: Column(
-        children: <Widget> [
-          Container(
-            width: double.infinity,
-            child: Card(
-              color: Colors.blue,
-              child: Text('CHART!'),
+      body: SingleChildScrollView(
+        child: Column(
+          children: <Widget> [
+            Container(
+              width: double.infinity,
+              child: Card(
+                color: Colors.blue,
+                child: Text('CHART!'),
+              ),
             ),
-          ),
-          UserTransactions()
-        ],
+            UserTransactions()
+          ],
+        ),
       ),
     );
   }
